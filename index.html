@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;900&display=swap"
+      rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/3f0a52c82d.js" crossorigin="anonymous"></script>
+    <title>StarWars</title>
+  </head>
+  <body>
+    <audio id="audio_start_music">
+      <source src="/sounds/star_wars_sound.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="audio_lazer_blade">
+      <source src="/sounds/lazer_blade.mp3" type="audio/mpeg" />
+    </audio>
+    <div id="star_wars_modal_onload" class="star_wars_modal_onload">
+      <input type="text" id="login_input" placeholder="Введите свой логин" />
+      <i class="fa-regular fa-circle-play" id="play_btn_for_start"></i>
+    </div>
+    <div id="body_wrapper">
+      <header class="header">
+        <img
+          class="header_logo"
+          src="https://lumiere-a.akamaihd.net/v1/images/sw_logo_stacked_2x-52b4f6d33087_7ef430af.png?region=0,0,586,254"
+          alt="Star Wars Logo" />
+      </header>
+      <nav class="nav_btn_group">
+        <button class="nav_btn" id="open_form">Добавить героя</button>
+        <button class="nav_btn" id="all_heroes">Все герои</button>
+        <div id="wrapper_for_select">
+          <button id="sort_button" class="nav_btn">Сортировать по ▼</button>
+          <div id="sort_options">
+            <button class="nav_btn nav_btn_inside_select" id="rate_btn">По рейтингу</button>
+            <button class="nav_btn nav_btn_inside_select" id="power_btn">По силе</button>
+            <button class="nav_btn nav_btn_inside_select" id="alphabet_btn">По алфавиту</button>
+          </div>
+        </div>
+        <button class="nav_btn" id="favorite_btn">Избранные герои</button>
+        <div class="search_hero">
+          <i class="fa-solid fa-magnifying-glass fa-beat"></i>
+          <input
+            type="text"
+            class="search_hero_input"
+            placeholder="Найти героя"
+            id="search_hero_input" />
+        </div>
+        <i
+          id="logout"
+          class="fa-solid fa-arrow-right-from-bracket"
+          style="color: #ffffff"
+          title="Выйти из аккаунта"></i>
+      </nav>
+      <main class="main" id="main"></main>
+      <footer class="footer">
+        <span>©2023</span>
+        <span
+          >Made by
+          <span>ds4045</span>
+          <i class="fa-solid fa-jedi fa-bounce"></i>
+        </span>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

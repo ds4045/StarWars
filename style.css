@@ -1,0 +1,27 @@
+@import 'styles/header.css';
+@import 'styles/footer.css';
+@import 'styles/hero.css';
+@import 'styles/modal_card.css';
+@import 'styles/form.css';
+@import 'styles/modal_info.css';
+@import 'styles/star_wars_modal_onload.css';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+body,
+html {
+  height: 100%;
+}
+#body_wrapper {
+  height: 100%;
+}
+
+.main {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}

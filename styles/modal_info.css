@@ -1,0 +1,58 @@
+#modal_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 500;
+  bottom: 10px;
+  width: 350px;
+  height: 80px;
+  background-color: black;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  padding: 10px;
+  opacity: 0.8;
+  left: -1000px;
+}
+.slide_in {
+  animation: slide-in 2s ease-out forwards;
+}
+.slide_out {
+  animation: slide-out 2s ease-out forwards;
+}
+@keyframes slide-in {
+  0% {
+    left: -1000px;
+  }
+  50% {
+    left: 10px;
+  }
+  100% {
+    left: 10px;
+  }
+}
+@keyframes slide-out {
+  0% {
+    left: 10px;
+  }
+  50% {
+    left: 10px;
+  }
+  100% {
+    left: -1000px;
+  }
+}
+.modal_info_text {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.fa-circle-check {
+  color: green;
+  font-size: 23px;
+}
+.fa-ban {
+  color: crimson;
+  font-size: 23px;
+}

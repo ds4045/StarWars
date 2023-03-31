@@ -1,0 +1,140 @@
+.hero {
+  border: 1px solid silver;
+  display: grid;
+  gap: 12px;
+  padding: 18px;
+  border-radius: 6px;
+  position: relative;
+  text-align: center;
+  margin: 10px;
+}
+.hero:hover {
+  box-shadow: 0px 0px 44px 22px rgba(34, 60, 80, 0.15);
+  transition: 0.3s ease-in-out;
+}
+.background_img {
+  height: 320px;
+  border-radius: 6px;
+  background-position: center;
+  background-size: cover;
+  background-image: url('/assets/default.png');
+}
+.fa-heart {
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.favorite_hero {
+  color: crimson;
+}
+.not_favorite_hero {
+  color: black;
+}
+.hero_options {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 10px;
+}
+.create_hero_fields {
+  display: flex;
+  justify-content: space-evenly;
+}
+.hero_field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img_title {
+  height: 20px;
+}
+.hero_field_name {
+  margin-left: 5px;
+  font-size: 17px;
+  font-weight: bold;
+}
+.hero_field_power {
+  margin-left: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+.hight {
+  color: green;
+}
+.medium {
+  color: #f9de4b;
+}
+.low {
+  color: crimson;
+}
+.hero_btn_group {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.hero_btn {
+  background-color: #000000;
+  border: none;
+  border-radius: 15px;
+  width: 140px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+.hero_btn:hover {
+  background-color: white;
+  color: #000000;
+  border: 2px solid #000000;
+  transition: ease-in 0.2s;
+}
+.rating {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: white;
+  font-size: 14px;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #182a4d;
+}
+.rating_green {
+  border: 2px solid green;
+}
+.rating_orange {
+  border: 2px solid orange;
+}
+.rating_red {
+  border: 2px solid red;
+}
+.fa-pen {
+  font-size: 20px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.fa-pen:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  transition: ease-in 0.2s;
+}
+.fa-trash-can {
+  font-size: 20px;
+  opacity: 0.5;
+  cursor: pointer;
+  color: crimson;
+}
+.fa-trash-can:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  transition: ease-in 0.2s;
+}

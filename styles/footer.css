@@ -1,0 +1,12 @@
+.footer {
+  color: white;
+  height: 40px;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.fa-jedi {
+  color: #fade4b;
+  margin-left: 5px;
+}
