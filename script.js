@@ -636,6 +636,11 @@ function submitHandler(event, type, idx, form) {
 //ПОЛУЧЕНИЕ И ОТПРАВКА РАНДОМНОГО ГЕРОЯ ИЗ DB
 function randomFetchHero(form) {
   const body = { ...starWarsHeroes[Math.floor(Math.random() * 21)] };
+  if (Object.keys(body).length === 0) {
+    openInfoModal('add', false);
+    form.remove();
+    return;
+  }
   body.id = Date.now();
   api.addHero(body).then((res) => {
     if (res?.message.includes('успешно')) {
